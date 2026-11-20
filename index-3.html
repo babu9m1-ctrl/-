@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#073b3a">
+<title>ফ্যামিলা টুর এন্ড ট্রাভেলস | আপনার ভ্রমণের বিশ্বস্ত সঙ্গী</title>
+<style>
+:root{--deep:#073b3a;--green:#0b6b60;--gold:#f2b84b;--ink:#172b2a;--muted:#647573;--paper:#f6faf8;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{background:var(--deep);color:white;position:sticky;top:0;z-index:10;box-shadow:0 5px 22px #001e1d22}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:13px 0}.brand{font-weight:800;font-size:1.05rem;line-height:1.25}.brand small{display:block;color:#c5e2d9;font-size:.72rem;font-weight:500}.links{display:flex;gap:20px;align-items:center;font-size:.92rem}.links a:hover{color:var(--gold)}.menu{display:none;background:none;border:1px solid #ffffff66;color:white;border-radius:8px;padding:7px 10px}
+.hero{color:white;background:linear-gradient(100deg,#052f30ed,#073b3ac9),url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85') center/cover;min-height:520px;display:flex;align-items:center}
+.hero-inner{padding:76px 0;max-width:720px}.eyebrow{color:var(--gold);font-weight:700;letter-spacing:.04em}.hero h1{font-size:clamp(2.1rem,5vw,4rem);line-height:1.2;margin:12px 0}.hero p{font-size:1.1rem;color:#e2efeb;max-width:620px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;border:0;border-radius:10px;padding:12px 20px;font-weight:750;cursor:pointer;font:inherit}.primary{background:var(--gold);color:#23302c}.outline{border:1px solid #ffffffa8;color:white;background:#ffffff12}
+section{padding:68px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 32px}.section-head h2{font-size:clamp(1.7rem,3vw,2.4rem);margin:0 0 8px;color:var(--deep)}.section-head p{margin:0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border:1px solid #e4eeea;border-radius:17px;overflow:hidden;box-shadow:0 8px 26px #153c3210}.card img{width:100%;height:190px;object-fit:cover;display:block}.card-body{padding:20px}.card h3{margin:0 0 7px;color:var(--deep)}.card p{color:var(--muted);margin:0 0 14px}.tag{display:inline-block;color:#07594f;background:#e6f5ef;border-radius:30px;padding:4px 10px;font-size:.8rem;font-weight:700}
+.about{background:#eaf4ef}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}.about img{width:100%;height:350px;object-fit:cover;border-radius:20px}.checks{padding:0;list-style:none}.checks li{margin:10px 0}.checks li:before{content:"✓";color:#0b806e;font-weight:900;margin-right:10px}
+.booking{background:var(--deep);color:white}.booking .section-head h2{color:white}.booking .section-head p{color:#c6dbd5}.form{max-width:760px;margin:auto;background:white;color:var(--ink);padding:25px;border-radius:18px;display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}label{font-weight:650;font-size:.92rem}input,select,textarea{width:100%;padding:12px;border:1px solid #d7e2dd;border-radius:9px;font:inherit;background:#fff;color:var(--ink)}textarea{min-height:95px;resize:vertical}.form button{grid-column:1/-1;background:var(--gold);color:#26302c;font-weight:800}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.contact-item{background:white;border:1px solid #e4eeea;border-radius:14px;padding:20px;text-align:center}.contact-item strong{display:block;color:var(--deep);margin-bottom:5px}.contact-item span{color:var(--muted);font-size:.92rem}
+footer{background:#042b2b;color:#d5e5df;padding:28px 0;text-align:center}footer small{color:#a9c6bd}
+.notice{font-size:.86rem;color:var(--muted);text-align:center;margin-top:14px}
+@media(max-width:760px){.links{display:none;position:absolute;top:60px;left:0;right:0;background:var(--deep);padding:16px 4%;flex-direction:column;align-items:flex-start}.links.open{display:flex}.menu{display:block}.grid,.contact-grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.about img{height:250px}.form{grid-template-columns:1fr}.field.full,.form button{grid-column:auto}.hero{min-height:470px}.hero-inner{padding:58px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#home">ফ্যামিলা টুর এন্ড ট্রাভেলস<small>আপনার ভ্রমণের বিশ্বস্ত সঙ্গী</small></a>
+  <button class="menu" id="menuBtn" aria-label="মেনু খুলুন">☰</button>
+  <nav class="links" id="navLinks"><a href="#home">হোম</a><a href="#services">আমাদের সেবা</a><a href="#destinations">জনপ্রিয় গন্তব্য</a><a href="#about">আমাদের সম্পর্কে</a><a href="#booking">বুকিং</a><a href="#contact">যোগাযোগ</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-inner">
+  <div class="eyebrow">TRAVEL • EXPLORE • ENJOY</div>
+  <h1>আপনার পরবর্তী ভ্রমণ হোক আনন্দময় ও নিশ্চিন্ত</h1>
+  <p>দেশ-বিদেশে ট্যুর, হোটেল বুকিং, বিমান টিকিট এবং ভ্রমণ পরিকল্পনায় পাশে আছে ফ্যামিলা টুর এন্ড ট্রাভেলস।</p>
+  <div class="actions"><a class="btn primary" href="#booking">ভ্রমণের অনুরোধ পাঠান</a><a class="btn outline" href="#services">আমাদের সেবা দেখুন</a></div>
+</div></section>
+
+<section id="services"><div class="wrap"><div class="section-head"><h2>আমাদের সেবাসমূহ</h2><p>আপনার প্রয়োজন অনুযায়ী ভ্রমণের প্রয়োজনীয় সেবা এক জায়গায়।</p></div>
+<div class="grid">
+ <article class="card"><img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80" alt="বিমান আকাশে উড়ছে"><div class="card-body"><span class="tag">এয়ার টিকিট</span><h3>বিমান টিকিট বুকিং</h3><p>দেশি ও আন্তর্জাতিক ফ্লাইটের টিকিট সম্পর্কে জানতে এবং বুকিংয়ের অনুরোধ পাঠান।</p></div></article>
+ <article class="card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="সমুদ্র সৈকত"><div class="card-body"><span class="tag">ট্যুর প্যাকেজ</span><h3>দেশি ও বিদেশি ট্যুর</h3><p>পরিবার, বন্ধু বা একক ভ্রমণের জন্য আপনার পছন্দমতো ট্যুর পরিকল্পনা।</p></div></article>
+ <article class="card"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80" alt="হোটেল রিসোর্ট"><div class="card-body"><span class="tag">হোটেল</span><h3>হোটেল ও রিসোর্ট বুকিং</h3><p>গন্তব্য ও বাজেট অনুযায়ী থাকার জায়গা খুঁজতে আমাদের সঙ্গে যোগাযোগ করুন।</p></div></article>
+ <article class="card"><img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=900&q=80" alt="পর্যটকবাহী বাস"><div class="card-body"><span class="tag">পরিবহন</span><h3>বাস ও ট্রান্সফার</h3><p>ভ্রমণের রুট অনুযায়ী পরিবহন ও লোকাল ট্রান্সফারের তথ্য নিন।</p></div></article>
+ <article class="card"><img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80" alt="পাসপোর্ট ও ভ্রমণ সামগ্রী"><div class="card-body"><span class="tag">ভ্রমণ সহায়তা</span><h3>ট্রাভেল গাইডেন্স</h3><p>ভ্রমণের প্রস্তুতি, প্রয়োজনীয় কাগজপত্র ও পরিকল্পনা সম্পর্কে সাধারণ সহায়তা।</p></div></article>
+ <article class="card"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=80" alt="লেক ও পাহাড়"><div class="card-body"><span class="tag">কাস্টম প্ল্যান</span><h3>নিজের মতো ভ্রমণ</h3><p>আপনার সময়, পছন্দ ও বাজেট জানালে ভ্রমণ পরিকল্পনার প্রস্তাব তৈরি করা হবে।</p></div></article>
+</div></div></section>
+
+<section id="destinations" class="about"><div class="wrap"><div class="section-head"><h2>জনপ্রিয় ভ্রমণ গন্তব্য</h2><p>বাংলাদেশের সৌন্দর্য থেকে শুরু করে বিশ্বের নানা আকর্ষণীয় জায়গা।</p></div>
+<div class="grid">
+ <article class="card"><img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=900&q=80" alt="কক্সবাজার সমুদ্র সৈকত"><div class="card-body"><h3>কক্সবাজার</h3><p>সমুদ্র, সূর্যাস্ত আর অবকাশের আনন্দ।</p></div></article>
+ <article class="card"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=80" alt="পাহাড়ি দৃশ্য"><div class="card-body"><h3>সাজেক ও পাহাড়</h3><p>মেঘ, পাহাড় ও প্রকৃতির কাছাকাছি সময়।</p></div></article>
+ <article class="card"><img src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=80" alt="বিদেশের পর্যটন শহর"><div class="card-body"><h3>আন্তর্জাতিক গন্তব্য</h3><p>আপনার পছন্দের দেশের জন্য ট্যুর পরিকল্পনা।</p></div></article>
+</div></div></section>
+
+<section id="about"><div class="wrap about-grid">
+ <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=80" alt="ভ্রমণ পরিকল্পনা" onerror="this.src='https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=80'">
+ <div><div class="eyebrow">ABOUT US</div><h2>ভ্রমণ পরিকল্পনায় আপনার পাশে</h2><p>ফ্যামিলা টুর এন্ড ট্রাভেলস-এর লক্ষ্য হলো আপনার ভ্রমণের প্রয়োজন বুঝে সহজভাবে তথ্য ও বুকিং সহায়তা দেওয়া। আপনার গন্তব্য, তারিখ ও বাজেট জানিয়ে আমাদের কাছে অনুরোধ পাঠান।</p><ul class="checks"><li>ব্যক্তিগত ও পরিবারভিত্তিক ভ্রমণ পরিকল্পনা</li><li>গন্তব্য ও বাজেট অনুযায়ী পরামর্শ</li><li>বুকিংয়ের আগে তথ্য যাচাইয়ের সুযোগ</li></ul><a class="btn primary" style="background:var(--green);color:white" href="#booking">এখনই যোগাযোগ করুন</a></div>
+</div></section>
+
+<section class="booking" id="booking"><div class="wrap"><div class="section-head"><h2>ভ্রমণের জন্য অনুরোধ পাঠান</h2><p>ফর্মটি পূরণ করলে আপনার তথ্যসহ একটি মেসেজ তৈরি হবে।</p></div>
+<form class="form" id="bookingForm">
+ <div class="field"><label for="name">আপনার নাম</label><input id="name" required placeholder="নাম লিখুন"></div>
+ <div class="field"><label for="phone">মোবাইল নম্বর</label><input id="phone" required inputmode="tel" placeholder="01XXXXXXXXX"></div>
+ <div class="field"><label for="service">কোন সেবা চান?</label><select id="service"><option>ট্যুর প্যাকেজ</option><option>এয়ার টিকিট</option><option>হোটেল বুকিং</option><option>বাস ও ট্রান্সফার</option><option>অন্যান্য</option></select></div>
+ <div class="field"><label for="destination">গন্তব্য</label><input id="destination" placeholder="যেমন: কক্সবাজার / মালয়েশিয়া"></div>
+ <div class="field"><label for="date">যাত্রার তারিখ</label><input id="date" type="date"></div>
+ <div class="field"><label for="people">যাত্রী সংখ্যা</label><input id="people" type="number" min="1" value="1"></div>
+ <div class="field full"><label for="details">অতিরিক্ত তথ্য</label><textarea id="details" placeholder="বাজেট, কয় দিনের ভ্রমণ বা অন্য কোনো তথ্য"></textarea></div>
+ <button class="btn" type="submit">WhatsApp-এ অনুরোধ পাঠান</button>
+</form><p class="notice" style="color:#c6dbd5">WhatsApp-এ পাঠানোর আগে নিচের সেটিংসে ব্যবসার WhatsApp নম্বর বসাতে হবে।</p>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="section-head"><h2>যোগাযোগ করুন</h2><p>আপনার ভ্রমণ নিয়ে কথা বলতে আমাদের সঙ্গে যোগাযোগ করুন।</p></div>
+<div class="contact-grid">
+ <div class="contact-item"><strong>ফোন</strong><span id="phoneText">আপনার ফোন নম্বর যোগ করুন</span></div>
+ <div class="contact-item"><strong>WhatsApp</strong><span id="waText">WhatsApp নম্বর যোগ করুন</span></div>
+ <div class="contact-item"><strong>ঠিকানা</strong><span id="addressText">আপনার অফিসের ঠিকানা যোগ করুন</span></div>
+</div><p class="notice">সেবা, মূল্য, টিকিট ও বুকিংয়ের প্রাপ্যতা নিশ্চিত করতে সরাসরি যোগাযোগ করুন।</p>
+</div></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> ফ্যামিলা টুর এন্ড ট্রাভেলস। সর্বস্বত্ব সংরক্ষিত।<br><small>আপনার ভ্রমণের বিশ্বস্ত সঙ্গী</small></div></footer>
+<script>
+// ওয়েবসাইট নিজের মতো সাজাতে নিচের তথ্য পরিবর্তন করুন। WhatsApp নম্বর: দেশের কোডসহ, + ছাড়া (যেমন 8801XXXXXXXXX)
+const BUSINESS = { phone: "01708000018", whatsapp: "8801708000018", address: "নয়মাইল, শাজাহানপুর, বগুড়া, বাংলাদেশ" };
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('phoneText').textContent=BUSINESS.phone||'আপনার ফোন নম্বর যোগ করুন';
+document.getElementById('waText').textContent=BUSINESS.whatsapp||'WhatsApp নম্বর যোগ করুন';
+document.getElementById('addressText').textContent=BUSINESS.address||'আপনার অফিসের ঠিকানা যোগ করুন';
+document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));
+document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));
+document.getElementById('bookingForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const v=id=>document.getElementById(id).value.trim();
+ const message=`আসসালামু আলাইকুম, ফ্যামিলা টুর এন্ড ট্রাভেলস।%0Aনাম: ${encodeURIComponent(v('name'))}%0Aমোবাইল: ${encodeURIComponent(v('phone'))}%0Aসেবা: ${encodeURIComponent(v('service'))}%0Aগন্তব্য: ${encodeURIComponent(v('destination'))}%0Aযাত্রার তারিখ: ${encodeURIComponent(v('date'))}%0Aযাত্রী: ${encodeURIComponent(v('people'))}%0Aঅতিরিক্ত তথ্য: ${encodeURIComponent(v('details'))}`;
+ if(!BUSINESS.whatsapp){alert('প্রথমে HTML ফাইলের শেষে BUSINESS অংশে আপনার WhatsApp নম্বর বসান।');return;}
+ window.open(`https://wa.me/${BUSINESS.whatsapp}?text=${message}`,'_blank');
+});
+</script>
+</body></html>
