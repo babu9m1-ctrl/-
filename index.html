@@ -1,22 +1,143 @@
-from pathlib import Path
-html = r'''
-ফ্যামিলি ট্যুর এন্ড ট্রাভেলস *{box-sizing:border-box} body{margin:0;font-family:Arial,sans-serif;background:#f4f8f7;color:#18332f;line-height:1.7} header{background:#075e54;color:white;text-align:center;padding:30px 15px} header h1{margin:0;font-size:27px} nav{background:#064b44;padding:12px;text-align:center} nav a{color:white;text-decoration:none;margin:0 10px;font-weight:bold;display:inline-block} .hero{background:linear-gradient(135deg,#087f70,#12a58d);color:white;text-align:center;padding:50px 18px} .hero h2{font-size:28px} .btn{display:inline-block;background:#ffca28;color:#18332f;text-decoration:none;padding:11px 20px;border-radius:7px;font-weight:bold;margin:5px;border:0;cursor:pointer;font-size:16px} section{max-width:900px;margin:25px auto;padding:25px 18px;background:white;border-radius:12px;box-shadow:0 2px 12px #0000000d} h2{color:#075e54;text-align:center} .info,.contact{text-align:center} .clock{background:#e5f5f1;border-radius:10px;padding:15px;text-align:center;font-size:18px;font-weight:bold;margin-top:15px} form{max-width:600px;margin:auto} label{display:block;margin-top:12px;font-weight:bold} input,textarea,select{width:100%;padding:12px;margin-top:5px;border:1px solid #bbb;border-radius:7px;font-size:16px} textarea{min-height:90px} form button{width:100%;margin-top:18px} .contact a{color:#075e54;font-weight:bold} iframe{width:100%;height:300px;border:0;border-radius:10px} footer{background:#064b44;color:white;text-align:center;padding:20px 12px;margin-top:30px} @media(max-width:600px){ header h1{font-size:23px} .hero h2{font-size:24px} nav a{margin:4px 6px;font-size:14px} section{margin:15px 10px} } 
-ফ্যামিলি ট্যুর এন্ড ট্রাভেলস
-আপনার নিরাপদ ও আনন্দময় ভ্রমণের সঙ্গী
-হোম আমাদের সম্পর্কে বুকিং যোগাযোগ 
-আপনার ভ্রমণ হোক আনন্দময়
-ভ্রমণ ও ট্যুর সংক্রান্ত তথ্য এবং বুকিংয়ের অনুরোধের জন্য আমাদের সঙ্গে যোগাযোগ করুন।
-বুকিং করুন WhatsApp করুন 
-আমাদের সম্পর্কে
-ফ্যামিলি ট্যুর এন্ড ট্রাভেলস-এ আপনাকে স্বাগতম। আপনার ভ্রমণ সংক্রান্ত প্রয়োজন ও বুকিংয়ের অনুরোধ জানাতে আমাদের সঙ্গে যোগাযোগ করুন।
-তারিখ লোড হচ্ছে...
-সময় লোড হচ্ছে...
-বুকিংয়ের অনুরোধ পাঠান
-নিচের ফর্ম পূরণ করে WhatsApp-এর মাধ্যমে বুকিংয়ের তথ্য পাঠান।
-আপনার নাম মোবাইল নম্বর কোথা থেকে যাবেন কোথায় যাবেন যাত্রার তারিখ যাত্রী সংখ্যা নির্বাচন করুন১ জন২ জন৩ জন৪ জন৫ জন৬ জন বা তার বেশি অতিরিক্ত তথ্য WhatsApp-এ বুকিং পাঠান 
-যোগাযোগ করুন
-📞 মোবাইল: 01708000018
-💬 WhatsApp: 01708000018
-📍 ঠিকানা: নয়মাইল, শাজাহানপুর, বগুড়া, বাংলাদেশ
-🌐 Facebook: আমাদের Facebook পেজ
-আমাদের ঠিকানা
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ফ্যামিলি ট্যুর এন্ড ট্রাভেলস</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f8fc;color:#222;line-height:1.6}
+header{background:#073b70;color:white;text-align:center;padding:28px 15px}
+header h1{margin:0;font-size:28px}
+header p{margin:5px 0}
+nav{background:#052b50;text-align:center;padding:12px}
+nav a{color:white;text-decoration:none;margin:0 10px;font-weight:bold}
+.hero{background:linear-gradient(135deg,#0878c9,#073b70);color:white;text-align:center;padding:55px 15px}
+.hero h2{font-size:28px;margin:0 0 10px}
+.btn{display:inline-block;background:#ffb900;color:#222;padding:11px 20px;border-radius:7px;text-decoration:none;font-weight:bold;margin:8px 4px}
+section{max-width:900px;margin:22px auto;padding:22px;background:white;border-radius:12px;box-shadow:0 2px 10px #0001}
+h2{color:#073b70}
+input,select,textarea{width:100%;padding:12px;margin:7px 0 14px;border:1px solid #bbb;border-radius:6px;font-size:16px}
+button{background:#0878c9;color:white;border:0;padding:13px 22px;border-radius:7px;font-size:17px;cursor:pointer;width:100%}
+.info{background:#eaf5ff;padding:14px;border-radius:8px}
+#clockTime{font-size:25px;font-weight:bold;color:#0878c9}
+iframe{width:100%;height:300px;border:0;border-radius:8px}
+footer{background:#052b50;color:white;text-align:center;padding:20px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>ফ্যামিলি ট্যুর এন্ড ট্রাভেলস</h1>
+<p>আপনার নিরাপদ ভ্রমণের বিশ্বস্ত সঙ্গী</p>
+<p>বাংলাদেশের যেকোনো স্থানে ভ্রমণ ও ট্যুর সেবা</p>
+</header>
+
+<nav>
+<a href="#home">হোম</a>
+<a href="#about">আমাদের সম্পর্কে</a>
+<a href="#booking">বুকিং</a>
+<a href="#contact">যোগাযোগ</a>
+</nav>
+
+<div class="hero" id="home">
+<h2>আপনার ভ্রমণ হোক আনন্দময়</h2>
+<p>পরিবার ও বন্ধুদের নিয়ে নিরাপদে ভ্রমণ করুন</p>
+<a class="btn" href="#booking">বুকিং করুন</a>
+<a class="btn" href="https://wa.me/8801708000018">WhatsApp</a>
+</div>
+
+<section id="about">
+<h2>আমাদের সম্পর্কে</h2>
+<p>ফ্যামিলি ট্যুর এন্ড ট্রাভেলস-এ আপনাকে স্বাগতম। আপনার ভ্রমণকে সহজ, সুন্দর ও আনন্দময় করতে আমরা পাশে আছি।</p>
+<div class="info">
+<p><b>ঠিকানা:</b> নয়মাইল, শাজাহানপুর, বগুড়া, বাংলাদেশ।</p>
+<p><b>মোবাইল:</b> 01708000018</p>
+</div>
+</section>
+
+<section>
+<h2>বর্তমান সময় ও তারিখ</h2>
+<p id="clockDate"></p>
+<div id="clockTime"></div>
+</section>
+
+<section id="booking">
+<h2>অনলাইন বুকিং অনুরোধ</h2>
+<form id="bookingForm">
+<label>আপনার নাম</label>
+<input type="text" id="customerName" required placeholder="আপনার নাম লিখুন">
+
+<label>মোবাইল নম্বর</label>
+<input type="tel" id="customerPhone" required placeholder="মোবাইল নম্বর লিখুন">
+
+<label>কোথা থেকে যাবেন?</label>
+<input type="text" id="fromPlace" required placeholder="যাত্রা শুরুর স্থান">
+
+<label>কোথায় যাবেন?</label>
+<input type="text" id="toPlace" required placeholder="গন্তব্য">
+
+<label>ভ্রমণের তারিখ</label>
+<input type="date" id="travelDate" required>
+
+<label>যাত্রীর সংখ্যা</label>
+<select id="passengers">
+<option>১ জন</option>
+<option>২ জন</option>
+<option>৩ জন</option>
+<option>৪ জন</option>
+<option>৫ জন</option>
+<option>৬ জন</option>
+<option>৭ জন বা বেশি</option>
+</select>
+
+<label>অতিরিক্ত তথ্য</label>
+<textarea id="extraInfo" rows="3" placeholder="আপনার প্রয়োজন লিখুন"></textarea>
+
+<button type="submit">WhatsApp-এ বুকিং পাঠান</button>
+</form>
+<p>বুকিং অনুরোধ পাঠানোর পর WhatsApp-এ মেসেজটি Send করতে হবে।</p>
+</section>
+
+<section id="contact">
+<h2>যোগাযোগ করুন</h2>
+<p><b>মোবাইল:</b> 01708000018</p>
+<p><b>WhatsApp:</b> 01708000018</p>
+<a class="btn" href="https://wa.me/8801708000018">WhatsApp-এ যোগাযোগ</a>
+<a class="btn" href="https://www.facebook.com/share/1AkRxurPgU/" target="_blank">Facebook পেজ</a>
+<h3>আমাদের ঠিকানা</h3>
+<iframe src="https://maps.google.com/maps?q=Noymail%20Shajahanpur%20Bogura%20Bangladesh&output=embed" loading="lazy"></iframe>
+</section>
+
+<footer>
+<p>© 2026 ফ্যামিলি ট্যুর এন্ড ট্রাভেলস</p>
+<p>ধন্যবাদ আমাদের সাথে থাকার জন্য</p>
+</footer>
+
+<script>
+function updateClock(){
+const now=new Date();
+document.getElementById("clockDate").textContent=now.toLocaleDateString("bn-BD",{weekday:"long",year:"numeric",month:"long",day:"numeric"});
+document.getElementById("clockTime").textContent=now.toLocaleTimeString("bn-BD");
+}
+updateClock();
+setInterval(updateClock,1000);
+
+document.getElementById("bookingForm").addEventListener("submit",function(e){
+e.preventDefault();
+const message=
+"নতুন বুকিং অনুরোধ%0A"+
+"নাম: "+document.getElementById("customerName").value+"%0A"+
+"মোবাইল: "+document.getElementById("customerPhone").value+"%0A"+
+"যাত্রা শুরু: "+document.getElementById("fromPlace").value+"%0A"+
+"গন্তব্য: "+document.getElementById("toPlace").value+"%0A"+
+"তারিখ: "+document.getElementById("travelDate").value+"%0A"+
+"যাত্রী: "+document.getElementById("passengers").value+"%0A"+
+"অতিরিক্ত তথ্য: "+document.getElementById("extraInfo").value;
+window.open("https://wa.me/8801708000018?text="+encodeURIComponent(message),"_blank");
+});
+</script>
+
+</body>
+</html>
